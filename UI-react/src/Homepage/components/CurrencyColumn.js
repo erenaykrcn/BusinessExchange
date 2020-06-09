@@ -14,8 +14,8 @@ class CurrencyColumn extends React.Component {
             stock: stocks[name],
         })
 
-        fetch("/api?format=json").then(response => response.json())
-        .then((jsonData) => {
+        fetch("/api?format=json").then(response => response.json()) //retrieves the settings config from django
+        .then((jsonData) => {		
             let settings = jsonData["results"][0];
             console.log(settings);
             thisC.setState({
@@ -43,7 +43,7 @@ class CurrencyColumn extends React.Component {
             sell = sell.toFixed(3);
         }
 
-        function buyHandler(name) {
+        function buyHandler(name) {   //buy click and popup 
             document.getElementById("alertBox").style.display = "block";
 
             setTimeout(() => { 
@@ -57,7 +57,7 @@ class CurrencyColumn extends React.Component {
         }
 
 
-        function sellHandler(name) {
+        function sellHandler(name) {  //sell click and popup
             document.getElementById("alertBox").style.display = "block";
 
             setTimeout(() => { 
@@ -71,7 +71,7 @@ class CurrencyColumn extends React.Component {
 
         }
 
-        function buyHover() {
+        function buyHover() {  //MouseOver
             document.getElementById("buyNav").style.fontSize = "1.7vw";
             document.getElementById("buyNav").style.color = "#79edc3";
 
@@ -81,7 +81,7 @@ class CurrencyColumn extends React.Component {
 
         }
 
-        function nbuyHover() {
+        function nbuyHover() {  //MouseOut
             document.getElementById("buyNav").style.fontSize = "1.2vw";
             document.getElementById("buyNav").style.color = "#e6fbfc";
 
@@ -93,7 +93,7 @@ class CurrencyColumn extends React.Component {
 
         }
 
-        function sellHover() {
+        function sellHover() {   //MouseOver
             document.getElementById("sellNav").style.fontSize = "1.7vw";
             document.getElementById("sellNav").style.color = "#79edc3";
             
@@ -104,7 +104,7 @@ class CurrencyColumn extends React.Component {
 
         }
 
-        function nsellHover() {
+        function nsellHover() {  //MouseOut
             document.getElementById("sellNav").style.fontSize = "1.2vw";
             document.getElementById("sellNav").style.color = "#e6fbfc";
 

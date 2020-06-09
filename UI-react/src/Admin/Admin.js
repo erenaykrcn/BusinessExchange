@@ -22,7 +22,7 @@ class Admin extends React.Component {
     componentWillMount() {
         let thisC = this;
 
-        fetch("/api?format=json").then(response => response.json()).then((jsonData) => {
+        fetch("/api?format=json").then(response => response.json()).then((jsonData) => {  //retrieves settings config from django REST API
             let settings;
             settings = jsonData["results"][0];
             console.log(settings);
@@ -36,10 +36,10 @@ class Admin extends React.Component {
 
     }
 
-    componentDidMount() {  //fills the input fields
+    componentDidMount() {  
         let thisC = this;
 
-        fetch("/api?format=json").then(response => response.json()).then((jsonData) => {
+        fetch("/api?format=json").then(response => response.json()).then((jsonData) => {    //retrieves settings config from django REST API
             let settings;
             settings = jsonData["results"][0];
             console.log(settings);
@@ -52,7 +52,7 @@ class Admin extends React.Component {
         })
 
         
-        let intt = window.setInterval(()=>{
+        let intt = window.setInterval(()=>{    //fills the input fields
             if (thisC.state.settings["period"] != undefined) {
                 document.getElementById("period").value = this.state.settings["period"];
                 document.getElementById("commissionPercentage").value =  this.state.settings["commissionPercentage"];
@@ -69,7 +69,7 @@ class Admin extends React.Component {
 
     }
 
-    update () {
+    update () {         //updates the settings config 
         let thisC = this;
         if (document.getElementById("period").value!=""&&document.getElementById("commissionPercentage").value!=""&&document.getElementById("surcharge").value!=""&&
             document.getElementById("minCommission").value!=""&&document.getElementById("buysellMargin").value!="") {
@@ -103,7 +103,7 @@ class Admin extends React.Component {
 
             
                 
-            let xhttp1 = new XMLHttpRequest();
+            let xhttp1 = new XMLHttpRequest(); //uses ajax
             xhttp1.onreadystatechange = function() { 
 
                 if (this.readyState === 4 && this.status === 200 && this.responseText=="SUCCESS") {
