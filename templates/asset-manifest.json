@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.41d821a6.chunk.css",
+    "main.js": "/static/js/main.43545633.chunk.js",
+    "runtime-main.js": "/static/js/runtime-main.be662e98.js",
+    "static/js/2.d8edd980.chunk.js": "/static/js/2.d8edd980.chunk.js",
+    "index.html": "/index.html",
+    "precache-manifest.2c925e9aa23d51e4b2852cddcda10a95.js": "/precache-manifest.2c925e9aa23d51e4b2852cddcda10a95.js",
+    "service-worker.js": "/service-worker.js",
+    "static/js/2.d8edd980.chunk.js.LICENSE.txt": "/static/js/2.d8edd980.chunk.js.LICENSE.txt",
+    "static/media/airportBack.png": "/static/media/airportBack.585fa575.png",
+    "static/media/airportFront.png": "/static/media/airportFront.5afef65c.png",
+    "static/media/as3.png": "/static/media/as3.3070d56d.png",
+    "static/media/coin.png": "/static/media/coin.ec9fa3af.png",
+    "static/media/map.jpg": "/static/media/map.ba757c7d.jpg",
+    "static/media/plane.png": "/static/media/plane.dddee338.png",
+    "static/media/sh.png": "/static/media/sh.c712a57f.png",
+    "static/media/usd.png": "/static/media/usd.46eac50c.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.be662e98.js",
+    "static/js/2.d8edd980.chunk.js",
+    "static/css/main.41d821a6.chunk.css",
+    "static/js/main.43545633.chunk.js"
+  ]
+}
