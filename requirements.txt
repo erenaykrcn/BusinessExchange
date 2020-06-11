@@ -12,14 +12,13 @@ distlib==0.3.0
 dj-database-url==0.5.0
 Django==3.0.7
 django-ckeditor==5.9.0
-django-cors-headers==2.2.0
 django-filter==2.2.0
 django-heroku==0.3.1
 django-js-asset==1.2.2
 django-rest-framework==0.1.0
 django-rest-knox==4.1.0
 django-storages==1.9.1
-djangorestframework==3.8.2
+djangorestframework==3.11.0
 dnspython==1.16.0
 docutils==0.15.2
 filelock==3.0.12
@@ -35,7 +34,7 @@ mccabe==0.6.1
 mysql-connector==2.2.9
 mysql-connector-python==8.0.19
 mysqlclient==1.4.6
-Pillow==6.2.1
+Pillow==7.1.2
 pipenv==2018.11.26
 protobuf==3.6.1
 psycopg2==2.8.4
